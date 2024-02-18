@@ -14,15 +14,15 @@
     </header>
 
     <main>
-        <!-- main ocntent starts here -->
+        <!-- main content starts here -->
         <div class="flex flex-col md:flex-row">
 
-            <!-- shape-card contianer -->
+            <!-- shape-card container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-                <!-- first card -->
+                <!-- triangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="./images/triangle.png" alt="traingle" /></figure>
+                    <figure><img src="./images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center">Triangle</h2>
                         <p class="text-center">Area (A) = 0.5 x b x h</p>
@@ -33,7 +33,7 @@
 
 
                         <div class="card-actions justify-center">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateTriangle()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
 
     <footer>
     </footer>
-
+    <script src="./scripts/triangle-calc.js"></script>
 </body>
 
 </html>
