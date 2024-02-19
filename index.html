@@ -15,10 +15,10 @@
 
     <main>
         <!-- main content starts here -->
-        <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col lg:flex-row">
 
             <!-- shape-card container -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="flex-1 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
                 <!-- triangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
@@ -27,10 +27,13 @@
                         <h2 class="card-title justify-center">Triangle</h2>
                         <p class="text-center">Area (A) = 0.5 x b x h</p>
                         <div class="text-center">
-                            <input class="bg-slate-500 w-24 h-8" type="text" placeholder="b"> <span>cm</span>
-                            <input class="bg-slate-500 w-24 h-8" type="text" placeholder="h"> <span>cm</span>
-                        </div>
 
+                            <input id="triangle-base" class="bg-amber-700 w-24 h-8 placeholder-red-100 text-cyan-400" type="text" placeholder="b"> <span>cm</span>
+                            <input id="triangle-height" class="bg-amber-700 w-24 h-8 placeholder-red-100 text-cyan-400" type="text" placeholder="h"> <span>cm</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="font-semibold">Area is <span id="triangle-area">0</span> cm<sup>2</sup> </p>
+                        </div>
 
                         <div class="card-actions justify-center">
                             <button onclick="calculateTriangle()" class="btn btn-primary w-full">Calculate</button>
