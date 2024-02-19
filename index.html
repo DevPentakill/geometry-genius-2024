@@ -41,15 +41,23 @@
                     </div>
                 </div>
 
-                <!-- second card -->
+                <!-- Rectangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
+                    <figure><img src="./images/rectangle.png" alt="rectangle" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title justify-center">Rectangle</h2>
+                        <p class="text-center">Area (A) = w x l</p>
+                        <div class="text-center">
+
+                            <input id="triangle-base" class="bg-amber-700 w-24 h-8 placeholder-red-100 text-cyan-400" type="text" placeholder="b"> <span>cm</span>
+                            <input id="triangle-height" class="bg-amber-700 w-24 h-8 placeholder-red-100 text-cyan-400" type="text" placeholder="h"> <span>cm</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="font-semibold">Area is <span id="triangle-area">0</span> cm<sup>2</sup> </p>
+                        </div>
+
+                        <div class="card-actions justify-center">
+                            <button onclick="calculateTriangle()" class="btn btn-primary w-full text-white bg-[#1090D8]">Calculate</button>
                         </div>
                     </div>
                 </div>

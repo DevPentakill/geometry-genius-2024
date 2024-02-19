@@ -1,4 +1,6 @@
-// console.log('hellow triangle');
+
+// We will see now area calculator in a step by step way
+
 
 function calculateTriangle() {
 
